@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="font-size:1.2vw;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>simple machine learning app</title>
+		<h1>GUJRAT REGION BUSSINESS PROFIT PREDICTION</h1>
+	</head>
+	<body style="background-image: url('https://cdn.pixabay.com/photo/2021/11/09/15/32/christmas-6781762_960_720.jpg');">
+		<hr>	
+		<form action="{{ url_for('predict') }}" method="post" >
+		<div> 
+			<div>City</div>
+			<select name="city1" id="city" >
+				<option value="Rajkot">Rajkot</option>
+				<option value="Junagadh">Junagadh</option>
+				<option value="Surat">Surat</option>
+			</select>
+			<div>Administration Cost (Rs.)</div>
+			<input type="text" id="ac" name="ac">
+			<br>
+			<div>Marketing Cost (Rs.)</div>
+			<input type="text" id="mc" name="mc">
+			<br>
+		</div>
+		<br>
+		
+                <input type="submit" value="Predict" name="Predict"/>
+		</form>
+		<br>
+		<hr>
+		<p style="float:right">-kish<span style="color:blue">A</span>n</p>
+		
+
+		
+	</body>
+</html>

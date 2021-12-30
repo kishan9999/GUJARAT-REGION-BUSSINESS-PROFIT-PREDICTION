@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html style="font-size:1.2vw;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>simple machine learning app</title>
+		<h1>RESULT</h1>
+	</head>
+	<body style="background-image: url('https://cdn.pixabay.com/photo/2021/11/09/15/32/christmas-6781762_960_720.jpg');">
+		<hr>
+		<div style="background-color:LightPink;opacity:0.7;color:blue">
+			<h2>Estimated Profit (Rs.)</h2>
+			<h1>{{prediction_value}}</h1>
+		</div>
+		
+		<form action="{{ url_for('home') }}" method="post" >
+                <input type="submit" value="Home" name="Home"/>
+		</form>
+		<br>
+		
+		<hr>
+		<p style="float:right">-kish<span style="color:blue">A</span>n</p>
+		
+
+		
+	</body>
+</html>
